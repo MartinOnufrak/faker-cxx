@@ -389,4 +389,8 @@ getJWTToken(const std::optional<std::map<std::string, std::string>>& header = st
  * @endcode
  */
 FAKER_CXX_EXPORT std::string_view getJWTAlgorithm();
+
+FAKER_CXX_EXPORT std::string toBase64UrlEncode(const std::string& input);
+
+FAKER_CXX_EXPORT std::string toJSON(std::map<std::string, std::string>& data);
 }
